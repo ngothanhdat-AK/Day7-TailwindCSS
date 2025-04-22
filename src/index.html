@@ -1,13 +1,85 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Ecommerce</title>
   <link href="./output.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <header>
+    <div class="container py-8">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="w-[130px] block">
+          <img src="../images/logo.webp" alt="Dairon">
+        </a>
+
+        <nav class="flex items-center gap-28">
+          <ul class="flex items-center gap-6">
+            <li><a href="#"
+                class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] hover:after:scale-x-100 after:scale-x-0 after:w-full after:bg-black after:transition-all after:duration-300 ">Home</a>
+            </li>
+            <li><a href="#"
+                class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] hover:after:scale-x-100 after:scale-x-0 after:w-full after:bg-black after:transition-all after:duration-300 ">Shop</a>
+            </li>
+            <li><a href="#"
+                class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] hover:after:scale-x-100 after:scale-x-0 after:w-full after:bg-black after:transition-all after:duration-300 ">Product</a>
+            </li>
+            <li><a href="#"
+                class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] hover:after:scale-x-100 after:scale-x-0 after:w-full after:bg-black after:transition-all after:duration-300 ">Blog</a>
+            </li>
+            <li><a href="#"
+                class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] hover:after:scale-x-100 after:scale-x-0 after:w-full after:bg-black after:transition-all after:duration-300 ">Fetured</a>
+            </li>
+          </ul>
+
+          <ul class="flex items-center gap-6">
+            <li><a href="" class="block size-5"><img src="../images/ico_user.png" alt="User Icon"></a></li>
+            <li>
+              <a href="" class="block relative size-5">
+                <img src="../images/ico_heart.png" alt="Heart Icon">
+                <span
+                  class="absolute -top-2 -right-2 rounded-full bg-primary text-white text-xs size-[18px] grid place-items-center">10</span>
+              </a>
+            </li>
+            <li><a href="" class="block relative size-5">
+                <img src="../images/ico_bag.png" alt="Bag Icon">
+                <span
+                  class="absolute -top-2 -right-2 rounded-full bg-primary text-white text-xs size-[18px] grid place-items-center">3</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h2 class="text-primary">Our Catagolory</h2>
+      <button class="btn btn-outline">Click me</button>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, eius neque eos culpa dolores dicta illum
+        asperiores minus quisquam dolore porro velit, quibusdam modi qui. Velit soluta quo deserunt dignissimos.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, eius neque eos culpa dolores dicta illum
+        asperiores minus quisquam dolore porro velit, quibusdam modi qui. Velit soluta quo deserunt dignissimos.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, eius neque eos culpa dolores dicta illum
+        asperiores minus quisquam dolore porro velit, quibusdam modi qui. Velit soluta quo deserunt dignissimos.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, eius neque eos culpa dolores dicta illum
+        asperiores minus quisquam dolore porro velit, quibusdam modi qui. Velit soluta quo deserunt dignissimos.</p>
+      <p class="text-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, eius neque eos culpa
+        dolores dicta illum asperiores minus quisquam dolore porro velit, quibusdam modi qui. Velit soluta quo deserunt
+        dignissimos.</p>
+    </div>
+  </main>
+  <footer>
+    <div class="max-w-[1480px] px-5 mx-auto">
+      Footer
+    </div>
+  </footer>
 </body>
+
 </html>
