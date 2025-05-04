@@ -27,6 +27,7 @@
     --font-size-sm: 14px;
     --font-size-md: 15px;
     --font-size-lg: 18px;
+    --font-size-large: 30px;
 
 
     --line-height-normal: 1.6;
@@ -74,10 +75,16 @@
     .bg-primary{
         background-color: var(--primary-color);
     }
+
+    .text-large{
+        font-size: var(--font-size-large);
+    }
 }
 
 @layer components {
     .btn{
+        display: inline-flex;
+        align-items: center;
         height: var(--button-height);
         padding: 0 28px;
         font-size: var(--font-size-md);
@@ -98,7 +105,28 @@
 
     }
 
-    .img{
+    .btn-outline-black{
+        border-color: var(--color-black);
+        color: var(--color-black);
+    }
+
+    .btn-outline-black:hover{
+        color: var(--color-white);
+        background-color: var(--color-black);
+    }
+
+    .btn-white{
+        color: var(--color-black);
+        background-color: var(--color-white);
+    }
+
+    .btn-white:hover{
+        color: var(--color-white);
+        background-color: var(--color-black);
+    }
+
+
+    .image{
         display: block;
         max-width: 100%;
         object-fit: cover;
